@@ -1,0 +1,408 @@
+
+/* -- 1.0 - General Styles -- */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #ffffff;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #444444;
+}
+header{
+	background-color: black;
+    position: relative;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {}
+
+a,
+a>* {
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:focus {
+    color: #ef4836;
+}
+
+a:hover {
+    color: #ab3152;
+}
+
+a:focus,
+a:hover {
+    outline: none;
+    text-decoration: none;
+}
+
+
+/* -- 2.0 - Typography -- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    color: #333;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 43px;
+}
+
+h2 {
+    font-size: 27px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+h4 {
+    font-size: 17px;
+}
+
+h5 {
+    font-size: 15px;
+}
+
+h6 {
+    font-size: 13px;
+}
+
+p {
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+}
+
+/* -- 3.0 - Pre Loader -- */
+
+.preloader-area {
+    background: #fff;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+}
+
+
+/* -- 4.0 - Common Styles -- */
+
+.section-padding {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 24px;
+    line-height: 36px;
+    color: #4d4d4d;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    font-size: 14px;
+    color: #666666;
+    margin: 15px auto 60px auto;
+}
+ 
+/* -- 5.0 - Navigation -- */
+
+.sticky.navbar-default {
+    background-color: #f5f5f5 !important;
+    padding: 10px 0;    
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.navbar-nav {
+    margin-top: 4px;
+}
+
+.sticky.navbar .nav>li {
+    padding: 0 13px;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 23px;
+}
+
+.sticky .navbar-nav>li>.dropdown-menu {
+    margin-top: 13px;
+}
+
+.navbar-right .dropdown-menu {
+    right: auto;
+    left: 15px;
+}
+
+.sticky .navbar-right .dropdown-menu {
+    left: 13px;
+}
+
+.navbar-brand {
+    padding: 0 15px;
+    height: auto;
+}
+
+.navbar .nav>li {
+    padding: 0 12px;
+    -webkit-transition: padding .4s ease-in-out;
+    -moz-transition: padding .4s ease-in-out;
+    transition: padding .4s ease-in-out;
+}
+
+.navbar .nav>li>a {
+    padding: 5px 0;
+}
+
+.navbar-default {
+    margin-bottom: 0;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #186108;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #186108;
+    border-bottom: 2px solid #186108;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #186108;
+    background-color: transparent;
+    border-bottom: 2px solid #307b24;
+}
+
+
+/*carousel slider */
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  background-color: black;
+}
+.carousel-caption{
+position: absolute;
+    left: 100px;
+    top: 50%;
+}
+.carousel-caption h1{
+	text-align: left;
+	color: white;
+    text-transform: uppercase;
+}
+
+/* form style */
+
+.form{   
+   width: 100%;
+    background: #1b6d06de;
+    padding: 52px 50px;
+    border-radius: 15px;
+    max-width: 500px;
+    position: absolute;
+    right:50px;
+    z-index: 1000;
+    bottom: 20%;
+}
+.form .form-group {
+    display: block;
+    margin-bottom: 20px;
+    vertical-align: middle;
+}
+.form .form-group .form-control {
+    display:block;
+    width: 100%;
+    vertical-align: middle;
+    padding: 10px 16px;
+}
+.form input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
+.btn.btn-normal{
+   border-radius: 4px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #1d650e;
+    color: #fff;
+    padding: 8px 35px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border: 4px solid #fff;
+}
+.btn.btn-normal i{
+text-align: right;
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+}
+.btn.btn-normal:hover {
+    background: transparent;    
+    border: 4px solid #fff;
+    color: #fff;
+}
+.sm-info{
+    width: 100%;
+}
+.form h5{
+    text-align: center;
+}
+.form h5 span{
+    text-decoration: underline;
+}
+select.form-control:not([size]):not([multiple]) {
+    height: auto;
+}
+.register{
+    bottom: 0;
+    padding: 20px 50px;
+}
+/*area section */
+
+.area .areas{
+    background: #1b6d06;
+    border-radius: 4px;
+    padding: 12px 0px;
+    display: block;
+    margin: 0 auto;
+}
+/*map css */
+
+ 
+      #map {
+        height: 100%;
+      }
+   .controls {
+        margin-top: 10px;
+        border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 32px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      #origin-input,
+      #destination-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 200px;
+      }
+
+      #origin-input:focus,
+      #destination-input:focus {
+        border-color: #4d90fe;
+      }
+
+      #mode-selector {
+        color: #fff;
+    background-color: #4d90fe;
+    margin-left: 12px;
+    padding: 5px 11px 0px 11px;
+    position: absolute;
+    top: -6px;
+    left: 32%;
+    z-index: 10;
+    background: transparent;
+      }
+
+      #mode-selector label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+      }
+#map{
+    height:400px;
+    width: 100%;
+}
+/*other*/
+.tables{
+    width: 100%;
+    border:none;
+    font-size: 20px;
+    padding: 10px;
+}
+/*media quyery */
+
+@media (max-width: 1200px){
+ .carousel-caption{
+display: none!important;
+}
+#mode-selector{
+    box-shadow: none;
+    left: 42%;
+}
+}
+@media (min-width: 700px){
+
+.tables{ 
+    width: 34%;
+    border: none;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;  
+}
+}
+@media (max-width: 1015px){
+
+#mode-selector{
+    top: 38px;
+    left: 15%;
+}
+#mode-selector #submit{
+    background: green;
+    color: white;
+    width:200px;
+}
+}
